@@ -114,6 +114,7 @@ body {
         margin: 27px 20px 27px 30px;
         border-radius: 20px;
         box-shadow: 2px 3px 10px 5px $grey-shadow;
+        // max-width: 450px;
         &__rank {
             background: $primary;
             color: white;
@@ -225,9 +226,12 @@ footer {
     a {
         color: white;
         font-weight: 500;
+        // margin-right: 100px;
     }
     .footer__links {
         display:flex;
+        // flex-wrap: wrap;
+        // justify-content: space-between;
         flex-direction: column;
         gap: 8px;
     }
