@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+$grey: #eaeaea;
+$dark-grey: #bebebe;
+$darker-grey: #818181;
+$darkest-grey: #353535;
+$grey-shadow: #e7e7e7;
+
+$light-grey: #f6f6f6;
+$primary: #9356DC;
+$secondary: #FF79DA;
+$tertiary: #99E2D0;
+$tertiary-darker: #108567;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    input {
+        font-family: 'Roboto', sans-serif;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+        // &:visited {
+        //     color: black;
+        // }
+    }
+    h1,h2,h3,p {
+        margin: 0;
+    }
+    
+
+}
+
+
+.header {
+    &__logo {
+        height: 28px;
+        margin: 25px 0 15px 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__location {
+        display: flex;
+        justify-content: center;
+        background: $grey; 
+        padding: 15px 0;
+        box-shadow: inset 0 4px 4px -2px $dark-grey;
+        // box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.7);
+
+        input {
+            border: none;
+            background: none;
+            font-size: 1em;
+            margin-left: 15px;
+            width: 140px;
+            font-weight: 500;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+.explore {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: $light-grey;
+    padding-top: 40px;
+    h1 {
+        width: 250px;
+        line-height: 28px;
+        margin: 0;
+    }
+    p {
+        font-size: 1.1em;
+        font-weight: 300;
+        margin: 0;
+        margin-top: 10px;
+    }
+    a {
+        display: block;
+        background: linear-gradient(to bottom right,$secondary,$primary);
+        margin-top: 30px;
+        margin-bottom: 60px;
+        padding: 15px 20px;
+        border-radius: 40px;
+        box-shadow: 2px 3px 5px $dark-grey;
+        color: white;
+
+    }
+}
+
+.instructions {
+    padding-bottom: 50px; 
+    
+    h1 {
+        margin: 50px 0 0 20px;
+    }
+    &__button {
+        display: flex;
+        align-items: center;
+        background: $light-grey;
+        padding: 22px 0;
+        margin: 27px 20px 27px 30px;
+        border-radius: 20px;
+        box-shadow: 2px 3px 10px 5px $grey-shadow;
+        &__rank {
+            background: $primary;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            position: relative;
+            right: 12px;
+        }
+        i {
+            font-size: 1.1em;
+            color: $darker-grey;
+            margin-left: 10px;
+        }
+        h3 {
+            font-size: 1em;
+            margin-left: 25px;
+        }
+    }
+}
+.restaurants {
+    background: $light-grey;
+    padding: 52px 20px 70px 20px;
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+
+        .card {
+            width: 335px;
+            border-radius: 15px;
+            background: white;
+            box-shadow: 3px 3px 7px 5px $grey-shadow;
+            &__img {
+                height: 175px;
+                background-size: cover;
+                // background-position: center;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+            .img1 {
+                background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+                background-position-y: bottom;
+            }
+            .img2 {
+                background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+                background-position-y: 60%;
+            }
+            .img3 {
+                background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+                background-position-y: bottom;
+            }
+            .img4 {
+                background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+                background-position-y: bottom;
+            }
+            &__new {
+                box-sizing: border-box;
+                height: 30px;
+                width: 80px;
+                border-radius: 2px;
+                background: $tertiary;
+                color: $tertiary-darker;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 500;
+                font-size: 0.9em;
+                position: relative;
+                top: 15px;
+                left: 240px;
+            }
+            &__description {
+                display:flex;
+                justify-content: space-between;
+                margin: 15px 12px;
+                &__text {
+                    h2 {
+                        font-size: 1.1em;
+                    }
+                    p {
+                        font-size: 1.05em;
+                        font-weight: 300;
+                        margin-top: 3px;
+                    }
+                }
+                i {
+                    font-size: 1.5em;
+                    margin-top: 10px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background: $darkest-grey;
+    color: white;
+    padding: 25px 25px 30px 25px;
+    p {
+        font-family: "Shrikhand" ,sans-serif;
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+    a {
+        color: white;
+        font-weight: 500;
+    }
+    .footer__links {
+        display:flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .footer__row {
+        display: flex;
+        align-items: center;
+        // gap: 10px;
+        i {
+            font-size: .7em;
+            margin-right: 10px;
+        }
+    }
+    .proposal {
+        i {
+            margin-right: 15px;
+        }
+    }
+}
