@@ -12,8 +12,15 @@
   }
 }
 @keyframes dots {
-  50% {
+  25% {
     opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  75% {
+    transform: translateY(0);
   }
   100% {
     opacity: 0;
@@ -143,6 +150,12 @@ body h1, body h2, body h3, body p {
   font-size: 1em;
   margin-left: 25px;
 }
+.instructions__button--purple {
+  background-color: #f5edff;
+}
+.instructions__button--purple i {
+  color: #9356DC;
+}
 
 .restaurants {
   background: #f6f6f6;
@@ -216,6 +229,7 @@ body h1, body h2, body h3, body p {
   margin-top: 10px;
   margin-right: 10px;
   font-size: 1.5em;
+  cursor: url(../images/icon/cursor.png), pointer;
 }
 .restaurants__cards .card__description__heart i {
   transition: all ease-in-out 1s;

@@ -84,6 +84,19 @@ main {
         background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
         background-position-x: center;
     }
+    .img-enchantee {
+        background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+        background-position: center;
+    }
+    .img-palette {
+        background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+        background-position: center;
+    }
+    .img-sens {
+        background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+        background-position: center;
+    }
+
 
     .menu {
         border-top-left-radius: 40px;
@@ -99,14 +112,16 @@ main {
             align-items: center;
             h2 {
                 font-family: "Shrikhand", sans-serif;
-                font-size: 1.7em;
+                font-size: 1.65em;
                 margin-left: 5px;
             }
             &__heart {
                 margin-right: 23px;
+                
                 i {                
                     // font-size: 1.4em;
                     transition: all ease-in-out 1s;
+                    cursor: url(../images/icon/cursor.png), pointer;
                 }
                 .heart-outline {
                     position: relative;
@@ -254,6 +269,9 @@ main {
                 }
                 .part3 {
                     animation: appearance ease-in-out .5s 1s forwards;
+                }
+                .part4 {
+                    animation: appearance ease-in-out .5s 1.5s forwards;
                 }
 
 

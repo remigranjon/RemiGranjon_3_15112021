@@ -49,10 +49,21 @@ $tertiary-darker: #108567;
 // }
 
 @keyframes dots{
-    50% {
+    25%{
         opacity: 1;
+        transform: translateY(0);
+    }
+    
+    50% {
+        transform: translateY(-50px);
+    }
+    75% {
+        transform: translateY(0);
+        // animation-timing-function: cubic-bezier(0,1.11,.62,1.07);
     }
     100% {
+        
+        // animation-timing-function: cubic-bezier(.88,.01,1,.49);
         opacity: 0;
     }
 }
@@ -147,9 +158,10 @@ body {
         margin-bottom: 60px;
         padding: 15px 20px;
         border-radius: 40px;
-        box-shadow: 2px 3px 5px $dark-grey;
         color: white;
+        box-shadow: 2px 3px 5px $dark-grey;
         transition: all ease-in-out .5s;
+        
 
         &:hover {
             opacity: .8;
@@ -174,6 +186,7 @@ body {
         border-radius: 20px;
         box-shadow: 2px 3px 10px 5px $grey-shadow;
         // max-width: 450px;
+        
         &__rank {
             background: $primary;
             color: white;
@@ -191,6 +204,12 @@ body {
         h3 {
             font-size: 1em;
             margin-left: 25px;
+        }
+        &--purple {
+            background-color: $light-primary;
+            i {
+                color: $primary;
+            }
         }
     }
 }
@@ -267,21 +286,18 @@ body {
                     margin-top: 10px;
                     margin-right: 10px;
                     font-size: 1.5em;
+                    cursor: url(../images/icon/cursor.png), pointer;
                     i {                
-                        // font-size: 1.4em;
                         transition: all ease-in-out 1s;
                     }
                     .heart-outline {
                         position: relative;
                         left: 29.5px;
                         z-index: 3;
-                        // font-size: 1.6em;
-                        // font-weight: 300;
                         &:hover {
                             background: linear-gradient(to bottom, $secondary, $primary);
                             background-clip: text;
                             color: rgba($color: #000000, $alpha: 0);
-                            // color: $primary;
                             & + i {
                                 transform-origin: center;
                                 transform: scale(1);
@@ -294,14 +310,6 @@ body {
                         background-clip: text;
                         color: rgba($color: #000000, $alpha: 0);
                         transform: scale(0);
-                        // font-size: 1.6em;
-                        // opacity: 0;
-                        // color: linear-gradient(to bottom, $secondary,$primary)
-    
-                        // &:hover {
-                        //     transform-origin: center;
-                        //     transform: scale(1);
-                        // }
                     }
     
                     
