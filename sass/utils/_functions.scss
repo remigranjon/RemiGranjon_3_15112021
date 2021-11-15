@@ -1,0 +1,22 @@
+@function fromto($colorfrom,$colorto,$number,$total) {
+    $hue: (hue($colorto) - hue($colorfrom));
+    $saturation: math.div(saturation($colorto) - saturation($colorfrom),1%);
+    $lightness: math.div(lightness($colorto) - lightness($colorfrom),1%);
+    $percent: math.div($number,$total);
+    $color: $colorfrom;
+    @if ($lightness > 0) {
+        $color: adjust-hue(lighten($colorfrom,$lightness*$percent),$hue*$percent);
+    }
+    @else {
+        $darkness: -1*$lightness;
+        $color: adjust-hue(darken($colorfrom,$darkness*$percent),$hue*$percent);
+    }
+    @if ($saturation > 0) {
+        @return saturate($color,$saturation*$percent);
+    }
+    @else {
+        $desaturation: -1*$saturation;
+        @return desaturate($color,$desaturation*$percent);
+    }
+    
+}

@@ -5,7 +5,7 @@
     transform: rotate(360deg);
   }
 }
-@keyframes appearance {
+@keyframes appearance-menu {
   0% {
     transform: translateY(20px);
     opacity: 0;
@@ -15,11 +15,45 @@
     opacity: 1;
   }
 }
+@keyframes appearance {
+  0% {
+    opacity: 0.1;
+  }
+  75% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes dots {
+  25% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  75% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes dots-disparition {
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 body {
-  min-width: 375px;
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
+  min-width: 375px;
 }
 body input {
   font-family: "Roboto", sans-serif;
@@ -34,7 +68,7 @@ body h1, body h2, body h3, body h4, body h5, body p {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 15px 0 5px 0;
 }
@@ -48,6 +82,37 @@ header h1 {
   font-family: "Shrikhand", sans-serif;
   font-size: 1.8em;
   margin: 0 auto;
+}
+
+footer {
+  background: #353535;
+  color: white;
+  padding: 25px 25px 30px 25px;
+}
+footer p {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+footer a {
+  color: white;
+  font-weight: 500;
+}
+footer .footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+footer .footer__row {
+  display: flex;
+  align-items: center;
+}
+footer .footer__row i {
+  font-size: 0.7em;
+  margin-right: 10px;
+}
+footer .proposal i {
+  margin-right: 15px;
 }
 
 main {
@@ -199,16 +264,16 @@ main .menu__layout .menu-part__check i {
   font-size: 1.2em;
 }
 main .menu__layout .menu-part .part1 {
-  animation: appearance ease-in-out 0.5s forwards;
+  animation: appearance-menu ease-in-out 0.5s calc(0.5s * (1 - 1)) forwards;
 }
 main .menu__layout .menu-part .part2 {
-  animation: appearance ease-in-out 0.5s 0.5s forwards;
+  animation: appearance-menu ease-in-out 0.5s calc(0.5s * (2 - 1)) forwards;
 }
 main .menu__layout .menu-part .part3 {
-  animation: appearance ease-in-out 0.5s 1s forwards;
+  animation: appearance-menu ease-in-out 0.5s calc(0.5s * (3 - 1)) forwards;
 }
 main .menu__layout .menu-part .part4 {
-  animation: appearance ease-in-out 0.5s 1.5s forwards;
+  animation: appearance-menu ease-in-out 0.5s calc(0.5s * (4 - 1)) forwards;
 }
 main .menu .command-btn {
   display: flex;
@@ -216,10 +281,10 @@ main .menu .command-btn {
   align-items: center;
 }
 main .menu .command-btn p {
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  margin-top: 30px;
   margin-bottom: 45px;
   padding: 15px 45px;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  margin-top: 30px;
   border-radius: 40px;
   box-shadow: 2px 3px 5px #bebebe;
   color: white;
@@ -229,37 +294,6 @@ main .menu .command-btn p {
 main .menu .command-btn p:hover {
   box-shadow: 2px 3px 5px #353535;
   opacity: 80%;
-}
-
-footer {
-  background: #353535;
-  color: white;
-  padding: 25px 25px 30px 25px;
-}
-footer p {
-  font-family: "Shrikhand", sans-serif;
-  font-size: 1.1em;
-  margin-bottom: 15px;
-}
-footer a {
-  color: white;
-  font-weight: 500;
-}
-footer .footer__links {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-footer .footer__row {
-  display: flex;
-  align-items: center;
-}
-footer .footer__row i {
-  font-size: 0.7em;
-  margin-right: 10px;
-}
-footer .proposal i {
-  margin-right: 15px;
 }
 
 /*# sourceMappingURL=menus.css.map */

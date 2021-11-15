@@ -1,0 +1,24 @@
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    position: fixed;
+    top: calc(50vh - 7.5px);
+    width: 100%;
+    &__dot {
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        opacity: 0;
+
+        @for $i from 1 through 10 {
+            &:nth-child(#{$i}) {
+                background: fromto($secondary,$primary,$i,10); 
+                animation: dots ease-in-out 1s calc(.2s*(#{$i} - 1));
+            }
+        }
+
+       
+    }
+
+}

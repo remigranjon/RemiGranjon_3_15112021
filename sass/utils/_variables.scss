@@ -1,0 +1,13 @@
+$grey: #eaeaea;
+$dark-grey: darken($grey,17.25);
+$darker-grey: darken($grey,41.18);
+$darkest-grey: darken($grey,70.98);
+$grey-shadow: darken($grey,1.18);
+
+$light-grey: lighten($grey,4.71);
+$primary: #9356DC;
+$light-primary: lighten(saturate(adjust-hue($primary, -1), 34.31), 36.47);
+$secondary: #FF79DA;
+$light-secondary: adjust-color($secondary, $lightness: 5%);
+$tertiary: #99E2D0;
+$tertiary-darker: darken(saturate(adjust-hue($tertiary, -1), 22.80), 45.10);

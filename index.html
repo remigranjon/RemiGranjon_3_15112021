@@ -11,15 +11,13 @@
 <body>
     <div class="content-wrapper">
         <header>
-            <div class="header__logo">
-                <img src="./images/logo/ohmyfood@2x.svg" alt="le logo ohmyfood">
-            </div>
-            <div class="header__location">
-                <i class="fas fa-map-marker-alt"></i>
-                <input type="text" value="Paris, Belleville">
-            </div>
+            <h1>ohmyfood</h1>
         </header>
         <main>
+            <article class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" value="Paris, Belleville">
+            </article>
             <article class="explore">
                 <h1>Réservez le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
@@ -27,21 +25,23 @@
             </article>
             <article class="instructions">
                 <h1>Fonctionnement</h1>
-                <a href="" class="instructions__button">
-                    <div class="instructions__button__rank">1</div>
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Choisissez un restaurant</h3>
-                </a>
-                <a href="" class="instructions__button">
-                    <div class="instructions__button__rank">2</div>
-                    <i class="fas fa-list-ul"></i>
-                    <h3>Composez votre menu</h3>
-                </a>
-                <a href="" class="instructions__button instructions__button--purple">
-                    <div class="instructions__button__rank">3</div>
-                    <i class="fas fa-store"></i>
-                    <h3>Dégustez au restaurant</h3>
-                </a>
+                <div class="instructions__buttons">
+                    <a href="" class="instructions__button">
+                        <div class="instructions__button__rank">1</div>
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Choisissez un restaurant</h3>
+                    </a>
+                    <a href="" class="instructions__button">
+                        <div class="instructions__button__rank">2</div>
+                        <i class="fas fa-list-ul"></i>
+                        <h3>Composez votre menu</h3>
+                    </a>
+                    <a href="" class="instructions__button instructions__button--purple">
+                        <div class="instructions__button__rank">3</div>
+                        <i class="fas fa-store"></i>
+                        <h3>Dégustez au restaurant</h3>
+                    </a>
+                </div>
             </article>
             <article class="restaurants">
                 <h1>Restaurants</h1>

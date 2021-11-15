@@ -1,0 +1,32 @@
+footer {
+    background: $darkest-grey;
+    color: white;
+    padding: 25px 25px 30px 25px;
+    p {
+        font-family: "Shrikhand" ,sans-serif;
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+    a {
+        color: white;
+        font-weight: 500;
+    }
+    .footer__links {
+        display:flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .footer__row {
+        display: flex;
+        align-items: center;
+        i {
+            font-size: .7em;
+            margin-right: 10px;
+        }
+    }
+    .proposal {
+        i {
+            margin-right: 15px;
+        }
+    }
+}
