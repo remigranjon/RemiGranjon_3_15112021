@@ -2,9 +2,9 @@
     background: linear-gradient(to bottom right,$secondary,$primary);
     margin-top: 30px;
     border-radius: 40px;
-    box-shadow: 2px 3px 5px $dark-grey;
     color: white;
     cursor: pointer;
+    box-shadow: 2px 3px 5px $dark-grey;
     transition: all ease-in-out .5s;
 
     &:hover {
