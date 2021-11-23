@@ -197,7 +197,7 @@ footer .proposal i {
   background: #f6f6f6;
   padding-top: 40px;
 }
-.explore h1 {
+.explore h2 {
   max-width: 250px;
   line-height: 28px;
   margin: 0;
@@ -228,7 +228,7 @@ footer .proposal i {
 .instructions {
   padding-bottom: 50px;
 }
-.instructions h1 {
+.instructions h2 {
   margin: 50px 0 0 20px;
 }
 .instructions__buttons {
