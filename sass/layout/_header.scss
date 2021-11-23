@@ -5,14 +5,16 @@ header {
     margin: 15px 0 5px 0;
     i {
         font-size: 1.2em;
-        position: absolute;
+        position: relative;
         left: 23px;
-        top: 25px;
 
     }
     h1 {
         font-family: "Shrikhand",sans-serif;
         font-size: 1.8em;
         margin: 0 auto;
+        @media (max-width:375px) {
+            font-size: 10vw;
+        } 
     }
 }

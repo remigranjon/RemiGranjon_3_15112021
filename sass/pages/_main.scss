@@ -26,7 +26,7 @@
     background: $light-grey;
     padding-top: 40px;
     h1 {
-        width: 250px;
+        max-width: 250px;
         line-height: 28px;
         margin: 0;
     }
@@ -114,6 +114,8 @@
                 background-size: cover;
                 border-top-left-radius: 15px;
                 border-top-right-radius: 15px;
+                display: flex;
+                justify-content: end;
             }
             .img1 {
                 background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -145,7 +147,7 @@
                 font-size: 0.9em;
                 position: relative;
                 top: 15px;
-                left: 240px;
+                right: 15px;
             }
             &__description {
                 display:flex;

@@ -45,7 +45,6 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  min-width: 375px;
 }
 body input {
   font-family: "Roboto", sans-serif;
@@ -66,14 +65,18 @@ header {
 }
 header i {
   font-size: 1.2em;
-  position: absolute;
+  position: relative;
   left: 23px;
-  top: 25px;
 }
 header h1 {
   font-family: "Shrikhand", sans-serif;
   font-size: 1.8em;
   margin: 0 auto;
+}
+@media (max-width: 375px) {
+  header h1 {
+    font-size: 10vw;
+  }
 }
 
 footer {
@@ -185,8 +188,13 @@ main .menu__layout {
   column-gap: 30px;
 }
 main .menu__layout .menu-part {
-  width: 345px;
+  max-width: 345px;
   margin-top: 30px;
+}
+@media (max-width: 375px) {
+  main .menu__layout .menu-part {
+    width: 90%;
+  }
 }
 main .menu__layout .menu-part h3 {
   text-transform: uppercase;
@@ -208,8 +216,18 @@ main .menu__layout .menu-part__element {
   box-shadow: 2px 2px 5px 3px #e7e7e7;
   opacity: 0;
 }
+@media (max-width: 375px) {
+  main .menu__layout .menu-part__element {
+    width: 100%;
+  }
+}
 main .menu__layout .menu-part__element:hover .menu-part__description {
   width: 286px;
+}
+@media (max-width: 375px) {
+  main .menu__layout .menu-part__element:hover .menu-part__description {
+    width: 80%;
+  }
 }
 main .menu__layout .menu-part__element:hover .menu-part__check i {
   animation: rotate 0.75s ease-in-out;
@@ -222,8 +240,16 @@ main .menu__layout .menu-part__description {
   transition: width ease-in-out 0.75s;
   width: 345px;
 }
+@media (max-width: 375px) {
+  main .menu__layout .menu-part__description {
+    width: 100%;
+  }
+}
 main .menu__layout .menu-part__description h4 {
   font-size: 1.11em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 main .menu__layout .menu-part__description__text {
   display: flex;
@@ -250,6 +276,11 @@ main .menu__layout .menu-part__check {
   flex-shrink: 0;
   background: #99E2D0;
   width: 59px;
+}
+@media (max-width: 375px) {
+  main .menu__layout .menu-part__check {
+    width: 20%;
+  }
 }
 main .menu__layout .menu-part__check i {
   color: white;
