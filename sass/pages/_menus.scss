@@ -92,12 +92,17 @@ main {
                     font-size: 1em;
                     font-weight: 300;
                     margin-left: 5px;
-                }
-                &__underline {
-                    width: 40px;
-                    height: 3px;
-                    background: $tertiary;
-                    margin: 3px 5px;
+                    margin-bottom: 20px;
+                    &::before {
+                        content: "";
+                        width: 40px;
+                        height: 3px;
+                        background: $tertiary;
+                        position: relative;
+                        top: 25px;
+                        display: block;
+
+                    }
                 }
                 &__element {
                     display: flex;

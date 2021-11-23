@@ -201,12 +201,16 @@ main .menu__layout .menu-part h3 {
   font-size: 1em;
   font-weight: 300;
   margin-left: 5px;
+  margin-bottom: 20px;
 }
-main .menu__layout .menu-part__underline {
+main .menu__layout .menu-part h3::before {
+  content: "";
   width: 40px;
   height: 3px;
   background: #99E2D0;
-  margin: 3px 5px;
+  position: relative;
+  top: 25px;
+  display: block;
 }
 main .menu__layout .menu-part__element {
   display: flex;
