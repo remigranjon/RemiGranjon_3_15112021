@@ -360,6 +360,7 @@ footer .proposal i {
 .restaurants__cards .card__description__heart .heart-outline:hover {
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
   background-clip: text;
+  -webkit-background-clip: text;
   color: rgba(0, 0, 0, 0);
 }
 .restaurants__cards .card__description__heart .heart-outline:hover + i {
@@ -369,6 +370,7 @@ footer .proposal i {
 .restaurants__cards .card__description__heart .heart-full {
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
   background-clip: text;
+  -webkit-background-clip: text;
   color: rgba(0, 0, 0, 0);
   transform: scale(0);
 }

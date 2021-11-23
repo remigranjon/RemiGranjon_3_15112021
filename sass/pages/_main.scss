@@ -178,6 +178,7 @@
                         &:hover {
                             background: linear-gradient(to bottom, $secondary, $primary);
                             background-clip: text;
+                            -webkit-background-clip : text;
                             color: rgba($color: #000000, $alpha: 0);
                             & + i {
                                 transform-origin: center;
@@ -189,6 +190,7 @@
                     .heart-full {
                         background: linear-gradient(to bottom, $secondary, $primary);
                         background-clip: text;
+                        -webkit-background-clip : text;
                         color: rgba($color: #000000, $alpha: 0);
                         transform: scale(0);
                     }
