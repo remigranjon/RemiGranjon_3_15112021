@@ -266,10 +266,10 @@ footer .proposal i {
   font-size: 1em;
   margin-left: 25px;
 }
-.instructions__button--purple {
+.instructions__button:hover {
   background-color: #f5edff;
 }
-.instructions__button--purple i {
+.instructions__button:hover i {
   color: #9356DC;
 }
 
